@@ -26,23 +26,28 @@ Do plots like boxplots,countplot,distribution plot,histogram plot.
 
 # Program:
 
-Name : G.TEJASWINI
-
-Reg no : 212222230157
+Name : ARUN KUMAR SUKDEV CHAVAN
+Reg no : 212222230013
 
 ```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+```
+```
 df=pd.read_csv("/content/iris (1).csv")
+```
+```
 df.nunique()
 ```
+
 <img width="80" alt="image" src="https://github.com/TejaswiniGugananthan/Ex03-Univariate-Analysis/assets/121222763/62991833-a8c7-475b-b183-238b7813cd69">
 
 ```
 df.head()
 ```
+
 <img width="267" alt="image" src="https://github.com/TejaswiniGugananthan/Ex03-Univariate-Analysis/assets/121222763/759b4aa5-f438-4246-a188-b6695267025f">
 
 ```
@@ -77,26 +82,27 @@ dfv=df.loc[df['species']=='virginica']
 plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'*')
 plt.xlabel('sepal length')
 plt.show()
-##plt.plot(df_setosa['sepal_length'],np.zeros_like(df_setosa['sepal_length']),'o')
+plt.plot(df_setosa['sepal_length'],np.zeros_like(df_setosa['sepal_length']),'o')
 ```
 <img width="225" alt="image" src="https://github.com/TejaswiniGugananthan/Ex03-Univariate-Analysis/assets/121222763/011bc3e2-773f-4ea1-92a9-ff2a041b6253">
 
 ```
 dfs=df.loc[df['species']=='setosa']
 dfc=df.loc[df['species']=='versicolor']
-
+```
+```
 plt.plot(dfs['sepal_length'],np.zeros_like(dfs['sepal_length']),'*')
 plt.plot(dfc['sepal_length'],np.zeros_like(dfc['sepal_length']),'X')
 ```
 <img width="222" alt="image" src="https://github.com/TejaswiniGugananthan/Ex03-Univariate-Analysis/assets/121222763/48c2b7c0-8e49-4033-b7dd-d385c9ef5532">
 
-```
+
 plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'o')
 plt.plot(dfs['sepal_length'],np.zeros_like(dfs['sepal_length']),'*')
 plt.plot(dfc['sepal_length'],np.zeros_like(dfc['sepal_length']),'X')
 plt.xlabel('petal_length')
 plt.show()
-```
+
 <img width="223" alt="image" src="https://github.com/TejaswiniGugananthan/Ex03-Univariate-Analysis/assets/121222763/62be360e-b61c-4746-aeab-2e672bd5cfae">
 
 ```
