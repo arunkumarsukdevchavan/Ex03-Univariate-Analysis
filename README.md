@@ -79,6 +79,7 @@ sns.countplot(x='species',data=df)
 ```
 dfv=df.loc[df['species']=='virginica']
 ```
+```
 plt.plot(dfv['sepal_length'],np.zeros_like(dfv['sepal_length']),'*')
 plt.xlabel('sepal length')
 plt.show()
